@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-light-gray);
+}
+
+.card{
+    width: 1000px;
+    height: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.left{
+    border-radius: 10px 0 0 10px;
+    background-color: var(--Bright-orange);
+}
+
+.middle{
+    background-color: var(--Dark-cyan);
+}
+
+.right{
+    border-radius: 0 10px 10px 0;
+    background-color: var(--Very-dark-cyan);
+}
+
+
+.texts{
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+
+#first{
+    margin-right: 70px;
+}
+
+#mid{
+    margin-right: 60px;
+}
+
+#right{
+    margin-right: 60px;
+}
+
+
+.title{
+    margin-top: 30px;
+    color: var(--Very-light-gray);
+    font-size: 42px;
+    font-family: "Big Shoulders Display";
+}
+
+
+.slogan{
+    font-family: "Lexend Deca";
+    margin-top: 30px;
+    line-height: 1.8;
+    color: var(--Transparent-white);
+}
+
+
+#left-button{
+    color: var(--Bright-orange)
+}
+
+#mid-button{
+    color: var(--Dark-cyan);
+}
+
+#right-button{
+    color: var(--Very-dark-cyan);
+}
+
+
+
+#left-button:hover{
+    color: white;
+}
+
+#mid-button:hover{
+    color: white;
+}
+
+#right-button:hover{
+    color: white;
+}
+
+
+
+button{
+    margin-top: 75px;
+    padding: 16px 39px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 24px;
+    font-family: "Lexend Deca";
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body{
+        align-items: flex-start;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+
+    .texts{
+        margin-top: 0
+    }
+
+    .left{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .middle{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .right{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        border-radius: 0 0 10px 10px;
+    }
+}
